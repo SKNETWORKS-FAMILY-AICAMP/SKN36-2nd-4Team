@@ -1,0 +1,28 @@
+# Local runtime environments and secrets
+.venv/
+**/.venv/
+venv/
+**/venv/
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.env
+**/.env
+!.env.example
+**/.env.example
+
+# Local/raw datasets; download or provide these separately
+lol_churn_all_data/
+**/lol_churn_all_data/
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.xlsx
+data/raw/
+
+# Local generated user-level model outputs
+models/**/oof_predictions.*
+models/**/membership.jsonl
