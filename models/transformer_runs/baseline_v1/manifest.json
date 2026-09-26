@@ -1,0 +1,41 @@
+{
+  "model": "small_transformer_encoder",
+  "run_name": "baseline_v1",
+  "cutoff": "2026-08-01",
+  "active_rule": "games_30d > 0",
+  "seed": 42,
+  "source": "lol_churn_all_data\\database\\lol_churn.db",
+  "split_source": "models\\catboost_2026-08-01\\split_assignments.csv",
+  "train_population": "original train + validation, active only; old test excluded",
+  "numeric_features": [
+    "days_before_cutoff",
+    "time_gap_days",
+    "win",
+    "kills",
+    "deaths",
+    "assists",
+    "kda",
+    "game_duration_min",
+    "gold_per_min",
+    "cs_per_min",
+    "damage_per_min",
+    "vision_per_min"
+  ],
+  "categorical_features": [
+    "mode_group",
+    "team_position",
+    "champion_id"
+  ],
+  "args": {
+    "run_name": "baseline_v1",
+    "epochs": 6,
+    "width": 32,
+    "layers": 1,
+    "dropout": 0.1,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "positive_weight": 1.0
+  },
+  "torch_version": "2.14.0+cpu",
+  "warning": "Single cutoff; CV selected after model development. Scores are not calibrated probabilities."
+}

@@ -1,0 +1,60 @@
+{
+  "model_type": "CatBoostClassifier",
+  "source_db": "lol_churn_all_data\\database\\lol_churn.db",
+  "cutoff_date": "2026-08-01",
+  "selected_variant": "reduced",
+  "selection_reason": "제외한 피처가 남은 피처와 정확히 같음",
+  "feature_columns_in_order": [
+    "games_7d",
+    "games_30d",
+    "games_90d",
+    "games_prev30d",
+    "activity_change_30d",
+    "active_days_30d",
+    "days_since_last_game",
+    "avg_gap_30d",
+    "max_gap_30d",
+    "last_gap",
+    "winrate_20",
+    "avg_kda_20",
+    "avg_kills_20",
+    "avg_deaths_20",
+    "avg_assists_20",
+    "losing_streak",
+    "winrate_change_10",
+    "avg_game_duration_20",
+    "avg_gold_per_min_20",
+    "avg_cs_per_min_20",
+    "avg_damage_per_min_20",
+    "avg_vision_per_min_20",
+    "unique_champions_20",
+    "top_champion_ratio_20",
+    "unique_modes_30d",
+    "mode_switch_rate_20",
+    "ranked_solo_ratio_30d",
+    "ranked_flex_ratio_30d",
+    "normal_ratio_30d",
+    "aram_ratio_30d",
+    "arena_ratio_30d",
+    "rotating_ratio_30d",
+    "other_ratio_30d"
+  ],
+  "excluded_columns": [
+    "churn",
+    "cutoff_date",
+    "player_id",
+    "source_batch_id",
+    "team_id"
+  ],
+  "correlation_threshold": 0.95,
+  "dropped_overlap_features": [
+    "actual_history_matches"
+  ],
+  "decision_threshold": 0.3383510981794106,
+  "random_seed": 42,
+  "versions": {
+    "catboost": "1.2.10",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6"
+  }
+}

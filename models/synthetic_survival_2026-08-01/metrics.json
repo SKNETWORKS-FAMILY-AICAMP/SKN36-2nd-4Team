@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "users": 2381,
+    "real_churn_rate": 0.1524569508609828,
+    "synthetic_event_30d_rate": 0.15203695926081479,
+    "synthetic_event_observed_rate": 0.41873162536749264,
+    "max_duration_days": 179.9,
+    "base_hazard": 0.0032519761745870694,
+    "seed": 42,
+    "horizons": [
+      7,
+      14,
+      30,
+      60,
+      90
+    ],
+    "warning": "Synthetic demonstration only; not a real observed survival label."
+  },
+  "metrics": {
+    "concordance_index": 0.7617132800968853
+  }
+}

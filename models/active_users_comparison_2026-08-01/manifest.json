@@ -1,0 +1,41 @@
+{
+  "evaluation": "5-fold stratified CV on development users with games_30d > 0",
+  "warning": "The old test split was already inspected; use a new cutoff for an unbiased final test.",
+  "active_definition": "games_30d > 0",
+  "development_active_users": 7806,
+  "development_active_churn": 711,
+  "folds": 5,
+  "selection_metric": "mean recall_at_20pct, then mean PR-AUC",
+  "selected_model": "CatBoost",
+  "selected_feature_set": "shap_top_15",
+  "selected_treatment": "none",
+  "selected_recall_20_mean": 0.661016448340392,
+  "feature_columns_in_order": [
+    "days_since_last_game",
+    "games_7d",
+    "active_days_30d",
+    "mode_switch_rate_20",
+    "activity_change_30d",
+    "max_gap_30d",
+    "games_30d",
+    "games_90d",
+    "unique_modes_30d",
+    "winrate_20",
+    "losing_streak",
+    "winrate_change_10",
+    "unique_champions_20",
+    "avg_assists_20",
+    "games_prev30d"
+  ],
+  "excluded_duplicate_feature": "actual_history_matches",
+  "random_seed": 42,
+  "model_file": "selected_model.cbm",
+  "versions": {
+    "catboost": "1.2.10",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "imbalanced_learn": "0.14.2",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6"
+  }
+}

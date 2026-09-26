@@ -1,0 +1,11 @@
+{
+  "source_baseline": "models/transformer_runs/baseline_v1",
+  "cohort": "active development users; old test excluded",
+  "seed": 42,
+  "folds": 5,
+  "time_columns_removed_in_no_time": [
+    "days_before_cutoff",
+    "time_gap_days"
+  ],
+  "note": "Both variants keep the same last-30-match selection and match counts."
+}

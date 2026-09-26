@@ -1,0 +1,144 @@
+{
+  "baseline_aggregates": {
+    "all_core": {
+      "users": 2381,
+      "churners": 363,
+      "prevalence": 0.1524569508609828,
+      "pr_auc_ap": 0.3969663050467909,
+      "roc_auc": 0.7831295202680012,
+      "top_10pct": {
+        "selected": 239,
+        "found_churn": 118,
+        "false_alarms": 121,
+        "precision": 0.49372384937238495,
+        "recall": 0.325068870523416,
+        "f1": 0.39202657807308966
+      },
+      "top_20pct": {
+        "selected": 477,
+        "found_churn": 189,
+        "false_alarms": 288,
+        "precision": 0.39622641509433965,
+        "recall": 0.5206611570247934,
+        "f1": 0.45
+      }
+    },
+    "solo_focused": {
+      "users": 1026,
+      "churners": 139,
+      "prevalence": 0.1354775828460039,
+      "pr_auc_ap": 0.3578616621878084,
+      "roc_auc": 0.7501885751826949,
+      "top_10pct": {
+        "selected": 103,
+        "found_churn": 43,
+        "false_alarms": 60,
+        "precision": 0.4174757281553398,
+        "recall": 0.30935251798561153,
+        "f1": 0.35537190082644626
+      },
+      "top_20pct": {
+        "selected": 206,
+        "found_churn": 68,
+        "false_alarms": 138,
+        "precision": 0.3300970873786408,
+        "recall": 0.4892086330935252,
+        "f1": 0.3942028985507247
+      }
+    },
+    "other": {
+      "users": 1355,
+      "churners": 224,
+      "prevalence": 0.16531365313653137,
+      "pr_auc_ap": 0.4242819785784296,
+      "roc_auc": 0.8006702349374764,
+      "top_10pct": {
+        "selected": 136,
+        "found_churn": 69,
+        "false_alarms": 67,
+        "precision": 0.5073529411764706,
+        "recall": 0.3080357142857143,
+        "f1": 0.38333333333333336
+      },
+      "top_20pct": {
+        "selected": 271,
+        "found_churn": 119,
+        "false_alarms": 152,
+        "precision": 0.43911439114391143,
+        "recall": 0.53125,
+        "f1": 0.48080808080808074
+      }
+    }
+  },
+  "with_match_sequence": {
+    "all_core": {
+      "users": 2381,
+      "churners": 363,
+      "prevalence": 0.1524569508609828,
+      "pr_auc_ap": 0.39766909436308473,
+      "roc_auc": 0.7849410402793591,
+      "top_10pct": {
+        "selected": 239,
+        "found_churn": 117,
+        "false_alarms": 122,
+        "precision": 0.4895397489539749,
+        "recall": 0.32231404958677684,
+        "f1": 0.3887043189368771
+      },
+      "top_20pct": {
+        "selected": 477,
+        "found_churn": 188,
+        "false_alarms": 289,
+        "precision": 0.3941299790356394,
+        "recall": 0.5179063360881543,
+        "f1": 0.44761904761904764
+      }
+    },
+    "solo_focused": {
+      "users": 1026,
+      "churners": 139,
+      "prevalence": 0.1354775828460039,
+      "pr_auc_ap": 0.3516069077341736,
+      "roc_auc": 0.7500101384506825,
+      "top_10pct": {
+        "selected": 103,
+        "found_churn": 43,
+        "false_alarms": 60,
+        "precision": 0.4174757281553398,
+        "recall": 0.30935251798561153,
+        "f1": 0.35537190082644626
+      },
+      "top_20pct": {
+        "selected": 206,
+        "found_churn": 68,
+        "false_alarms": 138,
+        "precision": 0.3300970873786408,
+        "recall": 0.4892086330935252,
+        "f1": 0.3942028985507247
+      }
+    },
+    "other": {
+      "users": 1355,
+      "churners": 224,
+      "prevalence": 0.16531365313653137,
+      "pr_auc_ap": 0.4278249185446131,
+      "roc_auc": 0.803733263862574,
+      "top_10pct": {
+        "selected": 136,
+        "found_churn": 69,
+        "false_alarms": 67,
+        "precision": 0.5073529411764706,
+        "recall": 0.3080357142857143,
+        "f1": 0.38333333333333336
+      },
+      "top_20pct": {
+        "selected": 271,
+        "found_churn": 123,
+        "false_alarms": 148,
+        "precision": 0.45387453874538747,
+        "recall": 0.5491071428571429,
+        "f1": 0.496969696969697
+      }
+    }
+  }
+}
