@@ -1,4 +1,4 @@
-# Local runtime environments and secrets
+# Local runtime environments
 .venv/
 **/.venv/
 venv/
@@ -7,22 +7,32 @@ node_modules/
 **/node_modules/
 __pycache__/
 **/__pycache__/
+.pytest_cache/
+**/.pytest_cache/
 *.py[cod]
+
+# Secrets (example templates are safe to commit)
 .env
 **/.env
-!.env.example
-**/.env.example
+.env.*
+**/.env.*
+!/.env.example
+!**/.env.example
 
-# Local/raw datasets; download or provide these separately
-lol_churn_all_data/
+# Data is distributed separately from the source branches
+/lol_churn_all_data/
 **/lol_churn_all_data/
+data/raw/
 *.db
 *.sqlite
 *.sqlite3
 *.parquet
 *.xlsx
-data/raw/
+**/puuids.csv
+**/seed_team_*.csv
+**/new_seed_*.csv
+**/lol_churn_project/
 
-# Local generated user-level model outputs
+# User-level model outputs; aggregate metrics remain versioned
 models/**/oof_predictions.*
 models/**/membership.jsonl
