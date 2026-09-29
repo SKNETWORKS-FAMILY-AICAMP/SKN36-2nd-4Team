@@ -1,0 +1,21 @@
+:root {
+  font-family: Pretendard, "Noto Sans KR", "Segoe UI", sans-serif;
+  color: #dbe8f7;
+  background: #041020;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --background: #041020;
+  --border: rgba(85, 132, 190, 0.34);
+  --muted: #8ea3bf;
+  --blue: #3b8cff;
+  --cyan: #55d8ff;
+  --gold: #f4bd5e;
+  --coral: #ff6b72;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; background: var(--background); }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: #041020; }
+button,
+input,
+select { font: inherit; }
