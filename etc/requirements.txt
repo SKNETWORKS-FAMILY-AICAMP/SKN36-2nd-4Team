@@ -1,0 +1,11 @@
+# Cohort preparation and a future core-user CatBoost experiment
+pandas>=2.2,<4
+numpy>=1.26,<3
+ipykernel>=6.29,<8
+catboost>=1.2.8,<2
+xgboost>=3.4,<4
+lightgbm>=4.7,<5
+scikit-learn>=1.6,<2
+imbalanced-learn>=0.14,<1
+matplotlib>=3.8,<4
+lifelines>=0.30,<1
