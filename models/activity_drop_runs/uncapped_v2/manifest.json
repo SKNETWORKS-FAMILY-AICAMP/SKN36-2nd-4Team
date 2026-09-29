@@ -1,0 +1,42 @@
+{
+  "target": "next 7d match count <= half of prior 7d match count",
+  "anchors": [
+    "2026-05-16",
+    "2026-05-23",
+    "2026-05-30",
+    "2026-06-06",
+    "2026-06-13",
+    "2026-06-20",
+    "2026-06-27",
+    "2026-07-04",
+    "2026-07-11",
+    "2026-07-18",
+    "2026-07-25"
+  ],
+  "prior_min_games": 2,
+  "history_rule": "first retained match <= anchor-7d",
+  "complete_history_rule": "sequence count equals actual_history_matches",
+  "cutoff": "2026-08-01",
+  "old_test_users": "excluded",
+  "cv": "5-fold stratified by target, grouped by team_id+player_id",
+  "source": "lol_churn_all_data\\database\\lol_churn.db",
+  "seed": 42,
+  "transformer_args": {
+    "width": 32,
+    "layers": 1,
+    "dropout": 0.1,
+    "epochs": 6,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "positive_weight": 1.0
+  },
+  "summary_features": [
+    "prior_7d_games",
+    "observed_history_matches",
+    "days_since_last_game",
+    "recent_winrate",
+    "recent_deaths",
+    "recent_gap"
+  ],
+  "warning": "Prototype on capped last-30-match histories. Scores are not calibrated probabilities."
+}

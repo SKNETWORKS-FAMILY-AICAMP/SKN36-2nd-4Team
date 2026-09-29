@@ -1,0 +1,54 @@
+{
+  "transformer": {
+    "folds": 5,
+    "users": 7544,
+    "churn_users": 4431,
+    "pr_auc_mean": 0.734208610693796,
+    "pr_auc_std": 0.016263740098065624,
+    "roc_auc_mean": 0.6349375483814671,
+    "f1_at_0_5_mean": 0.6883590279478983,
+    "top_10": {
+      "selected": 756,
+      "found": 679,
+      "false_alarms": 77,
+      "precision": 0.8981481481481481,
+      "recall": 0.15323854660347552,
+      "f1": 0.261808367071525
+    },
+    "top_20": {
+      "selected": 1511,
+      "found": 1225,
+      "false_alarms": 286,
+      "precision": 0.8107213765718068,
+      "recall": 0.2764612954186414,
+      "f1": 0.41231908448333904
+    }
+  },
+  "summary_catboost": {
+    "folds": 5,
+    "users": 7544,
+    "churn_users": 4431,
+    "pr_auc_mean": 0.8173438229578656,
+    "pr_auc_std": 0.010202196066115844,
+    "roc_auc_mean": 0.7153241620867227,
+    "f1_at_0_5_mean": 0.6988107958044111,
+    "top_10": {
+      "selected": 756,
+      "found": 756,
+      "false_alarms": 0,
+      "precision": 1.0,
+      "recall": 0.17061611374407584,
+      "f1": 0.29149797570850206
+    },
+    "top_20": {
+      "selected": 1511,
+      "found": 1439,
+      "false_alarms": 72,
+      "precision": 0.9523494374586366,
+      "recall": 0.32475739110810203,
+      "f1": 0.48434870414002024
+    }
+  },
+  "prevalence": 0.5873541887592789,
+  "always_drop_f1": 0.7400417536534447
+}

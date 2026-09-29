@@ -1,8 +1,0 @@
-pandas>=2.2,<4
-numpy>=1.26,<3
-catboost>=1.2.8,<2
-scikit-learn>=1.6,<2
-imbalanced-learn>=0.14,<1
-matplotlib>=3.8,<4
-lifelines>=0.30,<1
-pytest>=8,<9
