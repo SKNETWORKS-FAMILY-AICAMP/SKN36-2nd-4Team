@@ -1,0 +1,148 @@
+{
+  "nested_selection_oof": {
+    "all_core": {
+      "users": 2381,
+      "churners": 363,
+      "prevalence": 0.1524569508609828,
+      "pr_auc_ap": 0.38156845775001147,
+      "roc_auc": 0.7775475268042167,
+      "top_10pct": {
+        "selected": 239,
+        "found_churn": 116,
+        "false_alarms": 123,
+        "precision": 0.48535564853556484,
+        "recall": 0.31955922865013775,
+        "f1": 0.3853820598006645
+      },
+      "top_20pct": {
+        "selected": 477,
+        "found_churn": 186,
+        "false_alarms": 291,
+        "precision": 0.389937106918239,
+        "recall": 0.512396694214876,
+        "f1": 0.4428571428571429
+      }
+    },
+    "solo_focused": {
+      "users": 1026,
+      "churners": 139,
+      "prevalence": 0.1354775828460039,
+      "pr_auc_ap": 0.352601263566878,
+      "roc_auc": 0.7519972747844567,
+      "top_10pct": {
+        "selected": 103,
+        "found_churn": 43,
+        "false_alarms": 60,
+        "precision": 0.4174757281553398,
+        "recall": 0.30935251798561153,
+        "f1": 0.35537190082644626
+      },
+      "top_20pct": {
+        "selected": 206,
+        "found_churn": 65,
+        "false_alarms": 141,
+        "precision": 0.3155339805825243,
+        "recall": 0.4676258992805755,
+        "f1": 0.37681159420289856
+      }
+    },
+    "other": {
+      "users": 1355,
+      "churners": 224,
+      "prevalence": 0.16531365313653137,
+      "pr_auc_ap": 0.4063860112215471,
+      "roc_auc": 0.7915482505999747,
+      "top_10pct": {
+        "selected": 136,
+        "found_churn": 70,
+        "false_alarms": 66,
+        "precision": 0.5147058823529411,
+        "recall": 0.3125,
+        "f1": 0.3888888888888889
+      },
+      "top_20pct": {
+        "selected": 271,
+        "found_churn": 122,
+        "false_alarms": 149,
+        "precision": 0.45018450184501846,
+        "recall": 0.5446428571428571,
+        "f1": 0.49292929292929294
+      }
+    }
+  },
+  "selected_candidate_oof_exploratory": {
+    "all_core": {
+      "users": 2381,
+      "churners": 363,
+      "prevalence": 0.1524569508609828,
+      "pr_auc_ap": 0.41024351517280916,
+      "roc_auc": 0.7830011985791786,
+      "top_10pct": {
+        "selected": 239,
+        "found_churn": 118,
+        "false_alarms": 121,
+        "precision": 0.49372384937238495,
+        "recall": 0.325068870523416,
+        "f1": 0.39202657807308966
+      },
+      "top_20pct": {
+        "selected": 477,
+        "found_churn": 190,
+        "false_alarms": 287,
+        "precision": 0.39832285115303984,
+        "recall": 0.5234159779614325,
+        "f1": 0.45238095238095233
+      }
+    },
+    "solo_focused": {
+      "users": 1026,
+      "churners": 139,
+      "prevalence": 0.1354775828460039,
+      "pr_auc_ap": 0.36405069859340805,
+      "roc_auc": 0.7435701945771453,
+      "top_10pct": {
+        "selected": 103,
+        "found_churn": 45,
+        "false_alarms": 58,
+        "precision": 0.4368932038834951,
+        "recall": 0.3237410071942446,
+        "f1": 0.371900826446281
+      },
+      "top_20pct": {
+        "selected": 206,
+        "found_churn": 64,
+        "false_alarms": 142,
+        "precision": 0.3106796116504854,
+        "recall": 0.460431654676259,
+        "f1": 0.37101449275362314
+      }
+    },
+    "other": {
+      "users": 1355,
+      "churners": 224,
+      "prevalence": 0.16531365313653137,
+      "pr_auc_ap": 0.43985619186569713,
+      "roc_auc": 0.8035951117847671,
+      "top_10pct": {
+        "selected": 136,
+        "found_churn": 71,
+        "false_alarms": 65,
+        "precision": 0.5220588235294118,
+        "recall": 0.3169642857142857,
+        "f1": 0.39444444444444443
+      },
+      "top_20pct": {
+        "selected": 271,
+        "found_churn": 123,
+        "false_alarms": 148,
+        "precision": 0.45387453874538747,
+        "recall": 0.5491071428571429,
+        "f1": 0.496969696969697
+      }
+    }
+  },
+  "selected_candidate": {
+    "feature_set": "aggregate33",
+    "treatment": "class_weight_balanced"
+  }
+}

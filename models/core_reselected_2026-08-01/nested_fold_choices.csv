@@ -1,0 +1,6 @@
+fold,feature_set,treatment,inner_ap
+1,shap15,class_weight_2,0.41710234227159004
+2,engineered40,none,0.4021045808096296
+3,aggregate33,none,0.3826609907936646
+4,shap15,class_weight_2,0.4218711200535598
+5,engineered40,none,0.44128949301643944
