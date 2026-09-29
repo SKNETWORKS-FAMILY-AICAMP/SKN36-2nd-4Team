@@ -1,0 +1,5 @@
+# Cohort, profile, SQLite, and exploratory clustering analysis
+pandas>=2.2,<4
+numpy>=1.26,<3
+scikit-learn>=1.6,<2
+pytest>=8,<9
