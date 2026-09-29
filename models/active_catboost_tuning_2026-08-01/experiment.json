@@ -1,0 +1,47 @@
+{
+  "population": "development users with games_30d > 0",
+  "users": 7806,
+  "churn": 711,
+  "folds": 3,
+  "feature_selection": "top 15 CatBoost SHAP features selected on training portion of each fold",
+  "selection_metric": "F1 at top 10% (conservative fixed-capacity policy)",
+  "candidates": {
+    "baseline": {
+      "iterations": 300,
+      "depth": 5,
+      "learning_rate": 0.04,
+      "l2_leaf_reg": 5
+    },
+    "shallow": {
+      "iterations": 300,
+      "depth": 4,
+      "learning_rate": 0.04,
+      "l2_leaf_reg": 5
+    },
+    "deep": {
+      "iterations": 300,
+      "depth": 6,
+      "learning_rate": 0.04,
+      "l2_leaf_reg": 5
+    },
+    "stronger_l2": {
+      "iterations": 300,
+      "depth": 5,
+      "learning_rate": 0.04,
+      "l2_leaf_reg": 10
+    },
+    "slower_longer": {
+      "iterations": 450,
+      "depth": 5,
+      "learning_rate": 0.03,
+      "l2_leaf_reg": 5
+    },
+    "faster_shorter": {
+      "iterations": 200,
+      "depth": 5,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 5
+    }
+  },
+  "warning": "Exploratory same-cutoff tuning; selected maximum is optimistic. No new temporal test available."
+}

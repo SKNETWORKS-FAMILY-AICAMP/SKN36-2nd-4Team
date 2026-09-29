@@ -1,0 +1,16 @@
+{
+  "cutoff": "2026-08-01",
+  "cohort": "active development users; old test excluded",
+  "seed": 42,
+  "folds": 5,
+  "aggregate_features": [
+    "games_7d",
+    "games_30d",
+    "games_90d",
+    "games_prev30d",
+    "active_days_30d",
+    "days_since_last_game",
+    "max_gap_30d"
+  ],
+  "note": "Exploratory comparisons on reused CV folds; no external validation."
+}
