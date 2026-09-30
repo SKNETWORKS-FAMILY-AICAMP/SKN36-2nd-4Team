@@ -1,0 +1,9 @@
+{
+  "transformer_top1": 0.17791368781980457,
+  "transformer_top3": 0.27901511061477385,
+  "transformer_top5": 0.3391827460426803,
+  "repeat_last_top1": 0.2227928580470689,
+  "history_favorite_top1": 0.2519731643467151,
+  "history_favorite_top3": 0.42318786164925787,
+  "history_favorite_top5": 0.5009454532065478
+}

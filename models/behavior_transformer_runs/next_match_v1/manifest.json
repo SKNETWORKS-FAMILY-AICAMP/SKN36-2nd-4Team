@@ -1,0 +1,18 @@
+{
+  "task": "next observed match mode and gap conditional on another match",
+  "modes": [
+    "RANKED_SOLO",
+    "NORMAL",
+    "RANKED_FLEX",
+    "ARAM",
+    "OTHER"
+  ],
+  "min_prefix": 5,
+  "max_prefix_samples_per_user": 3,
+  "folds": 5,
+  "split": "stratified group by team_id+player_id",
+  "old_test_users": "excluded",
+  "seed": 42,
+  "source": "lol_churn_all_data\\database\\lol_churn.db",
+  "warning": "The model does not predict whether another game will occur. It is evaluated on users with an observed next match. Output is not a calibrated forecast."
+}

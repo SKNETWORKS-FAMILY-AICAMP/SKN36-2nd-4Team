@@ -1,0 +1,39 @@
+{
+  "evaluation": "5-fold stratified development-set CV; no held-out test evaluation",
+  "warning": "The prior CatBoost experiment already inspected the same test users. New temporal users are needed for an unbiased final test.",
+  "source_db": "lol_churn_all_data\\database\\lol_churn.db",
+  "development_users": 8397,
+  "positive_rate": 0.12968917470525188,
+  "folds": 5,
+  "random_seed": 42,
+  "selected_model": "XGBoost",
+  "selected_feature_set": "shap_top_15",
+  "weighted": true,
+  "cv_pr_auc_mean": 0.5437505595211428,
+  "feature_columns_in_order": [
+    "days_since_last_game",
+    "games_7d",
+    "active_days_30d",
+    "games_30d",
+    "mode_switch_rate_20",
+    "activity_change_30d",
+    "games_90d",
+    "unique_modes_30d",
+    "winrate_change_10",
+    "winrate_20",
+    "losing_streak",
+    "avg_kda_20",
+    "avg_gap_30d",
+    "max_gap_30d",
+    "ranked_flex_ratio_30d"
+  ],
+  "excluded_duplicate_feature": "actual_history_matches",
+  "model_file": "selected_model.json",
+  "versions": {
+    "catboost": "1.2.10",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6"
+  }
+}

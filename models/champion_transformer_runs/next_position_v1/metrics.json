@@ -1,0 +1,11 @@
+{
+  "transformer_top1": 0.6625024078633872,
+  "transformer_top3": 0.8881721781297853,
+  "transformer_top5": 0.9868074927894994,
+  "repeat_last_top1": 0.6600361477192203,
+  "history_favorite_top1": 0.6017186212014767,
+  "history_favorite_top3": 0.8852540377156067,
+  "history_favorite_top5": 0.9512575570597118,
+  "transformer_macro_f1": 0.6767089347621782,
+  "history_favorite_macro_f1": 0.6134254401508163
+}

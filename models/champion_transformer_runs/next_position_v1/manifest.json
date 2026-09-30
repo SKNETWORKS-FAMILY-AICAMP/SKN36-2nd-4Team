@@ -1,0 +1,19 @@
+{
+  "task": "next observed match position conditional on another match",
+  "target_ids": [
+    "BOTTOM",
+    "JUNGLE",
+    "MIDDLE",
+    "NONE",
+    "TOP",
+    "UTILITY"
+  ],
+  "max_matches": 30,
+  "min_prefix": 5,
+  "samples_per_user": 3,
+  "old_test_users": "excluded",
+  "cv": "5-fold grouped by team_id+player_id",
+  "seed": 42,
+  "source": "lol_churn_all_data\\database\\lol_churn.db",
+  "warning": "Research score, not a calibrated probability or recommendation."
+}

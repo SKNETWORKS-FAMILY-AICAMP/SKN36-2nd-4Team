@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: skn36-lol-churn-api
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: FRONTEND_ORIGINS
+        value: http://localhost:5173,http://127.0.0.1:5173

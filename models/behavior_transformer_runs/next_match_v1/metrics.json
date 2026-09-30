@@ -1,0 +1,16 @@
+{
+  "transformer": {
+    "mode_accuracy": 0.9028028163197781,
+    "mode_macro_f1": 0.8360400622913936,
+    "gap_mae_days": 1.0945493221282958,
+    "gap_median_ae_days": 0.23476950824260712,
+    "gap_log_mae": 0.37001078128814696
+  },
+  "repeat_last_mode": {
+    "mode_accuracy": 0.9089675715166038,
+    "mode_macro_f1": 0.8477164817905484,
+    "gap_mae_days": 0.9930663704872131,
+    "gap_median_ae_days": 0.009124897047877311,
+    "gap_log_mae": 0.28181660175323486
+  }
+}

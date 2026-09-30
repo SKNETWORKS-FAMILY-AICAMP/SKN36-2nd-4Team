@@ -1,0 +1,166 @@
+{
+  "features": [
+    "games_prev30d",
+    "games_30d",
+    "active_days_30d",
+    "days_since_last_game",
+    "ranked_solo_ratio_30d",
+    "ranked_flex_ratio_30d",
+    "aram_ratio_30d",
+    "normal_ratio_30d",
+    "mode_switch_rate_20",
+    "winrate_20",
+    "avg_kda_20"
+  ],
+  "log_transformed": [
+    "games_prev30d",
+    "games_30d",
+    "active_days_30d",
+    "days_since_last_game",
+    "avg_kda_20"
+  ],
+  "method": "median imputation + standard scaling + KMeans",
+  "silhouette_sample_size": 1500,
+  "tested_k": [
+    {
+      "k": 2,
+      "silhouette_sampled": 0.15575840868623608,
+      "sizes": [
+        1042,
+        1339
+      ]
+    },
+    {
+      "k": 3,
+      "silhouette_sampled": 0.15201599951608738,
+      "sizes": [
+        1035,
+        799,
+        547
+      ]
+    },
+    {
+      "k": 4,
+      "silhouette_sampled": 0.1706693254199364,
+      "sizes": [
+        657,
+        868,
+        324,
+        532
+      ]
+    },
+    {
+      "k": 5,
+      "silhouette_sampled": 0.18033380684267475,
+      "sizes": [
+        522,
+        327,
+        852,
+        641,
+        39
+      ]
+    },
+    {
+      "k": 6,
+      "silhouette_sampled": 0.15421708915125476,
+      "sizes": [
+        564,
+        527,
+        533,
+        308,
+        410,
+        39
+      ]
+    }
+  ],
+  "chosen_k": 5,
+  "selection_note": "Exploratory choice by sampled silhouette on the same dataset",
+  "cluster_profiles": [
+    {
+      "cluster": 0,
+      "games_prev30d_mean": 11.555555555555555,
+      "games_30d_mean": 15.28352490421456,
+      "active_days_30d_mean": 4.802681992337165,
+      "days_since_last_game_mean": 7.000422572149496,
+      "ranked_solo_ratio_30d_mean": 0.19080320835047063,
+      "ranked_flex_ratio_30d_mean": 0.6203261813521994,
+      "aram_ratio_30d_mean": 0.007931468023312705,
+      "normal_ratio_30d_mean": 0.06221627198963709,
+      "mode_switch_rate_20_mean": 0.2219828752374302,
+      "winrate_20_mean": 0.48753415706059744,
+      "avg_kda_20_mean": 3.1326057843683524,
+      "churn_size": 522,
+      "churn_sum": 58,
+      "churn_mean": 0.1111111111111111
+    },
+    {
+      "cluster": 1,
+      "games_prev30d_mean": 11.82874617737003,
+      "games_30d_mean": 16.99388379204893,
+      "active_days_30d_mean": 5.492354740061162,
+      "days_since_last_game_mean": 6.742834989416978,
+      "ranked_solo_ratio_30d_mean": 0.08374629058998058,
+      "ranked_flex_ratio_30d_mean": 0.033365367238806384,
+      "aram_ratio_30d_mean": 0.007474806163845273,
+      "normal_ratio_30d_mean": 0.8487747548030115,
+      "mode_switch_rate_20_mean": 0.12720032171987747,
+      "winrate_20_mean": 0.4786358435870607,
+      "avg_kda_20_mean": 2.8488798405657656,
+      "churn_size": 327,
+      "churn_sum": 52,
+      "churn_mean": 0.15902140672782875
+    },
+    {
+      "cluster": 2,
+      "games_prev30d_mean": 9.27699530516432,
+      "games_30d_mean": 22.706572769953052,
+      "active_days_30d_mean": 7.004694835680751,
+      "days_since_last_game_mean": 3.7558171392067683,
+      "ranked_solo_ratio_30d_mean": 0.748804744750653,
+      "ranked_flex_ratio_30d_mean": 0.05735845844679827,
+      "aram_ratio_30d_mean": 0.004429728688522292,
+      "normal_ratio_30d_mean": 0.031513029471288465,
+      "mode_switch_rate_20_mean": 0.08572241068153069,
+      "winrate_20_mean": 0.4925611863447079,
+      "avg_kda_20_mean": 3.1389509198740164,
+      "churn_size": 852,
+      "churn_sum": 61,
+      "churn_mean": 0.0715962441314554
+    },
+    {
+      "cluster": 3,
+      "games_prev30d_mean": 16.709828393135727,
+      "games_30d_mean": 7.363494539781591,
+      "active_days_30d_mean": 2.469578783151326,
+      "days_since_last_game_mean": 12.997028413449039,
+      "ranked_solo_ratio_30d_mean": 0.8728004736234911,
+      "ranked_flex_ratio_30d_mean": 0.019141810456839218,
+      "aram_ratio_30d_mean": 0.003660497069233418,
+      "normal_ratio_30d_mean": 0.015919999062570897,
+      "mode_switch_rate_20_mean": 0.0781448735332711,
+      "winrate_20_mean": 0.4756735620972156,
+      "avg_kda_20_mean": 3.0519914134077615,
+      "churn_size": 641,
+      "churn_sum": 181,
+      "churn_mean": 0.2823712948517941
+    },
+    {
+      "cluster": 4,
+      "games_prev30d_mean": 11.948717948717949,
+      "games_30d_mean": 11.846153846153847,
+      "active_days_30d_mean": 3.3076923076923075,
+      "days_since_last_game_mean": 10.268293356481482,
+      "ranked_solo_ratio_30d_mean": 0.10080513503590426,
+      "ranked_flex_ratio_30d_mean": 0.04420007343084266,
+      "aram_ratio_30d_mean": 0.827224527609143,
+      "normal_ratio_30d_mean": 0.012319902319902317,
+      "mode_switch_rate_20_mean": 0.15835636098793993,
+      "winrate_20_mean": 0.4405435020819636,
+      "avg_kda_20_mean": 3.3625182643030973,
+      "churn_size": 39,
+      "churn_sum": 11,
+      "churn_mean": 0.28205128205128205
+    }
+  ],
+  "warning": "Churn was excluded from clustering; rates are retrospective descriptions, not unbiased prediction metrics."
+}
